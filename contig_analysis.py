@@ -1,3 +1,6 @@
+"""
+Using contigs mapping result can detect deletion sites at the positions as same as split-read analysis did.
+"""
 import sys
 sampath = sys.argv[1]
 def Filter_Quality(sampath):
