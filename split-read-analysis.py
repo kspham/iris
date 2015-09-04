@@ -1,5 +1,9 @@
 #input: predicted deletion sites
 #output: deletion range at nucleotide resolution
+"""
+For each structural variants detected in the first step, I confirm the exact break points for each site by using split-read alignment result. 
+Split read is the one that has been mapped partially on reference, one part of that read is soft clipped.
+"""
 import sys
 sampath,svpath, insertsz = sys.argv[1:]
 insertsize = int(insertsz)
